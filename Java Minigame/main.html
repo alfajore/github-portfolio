@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which is Which?!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="game-title">Animal or Object?</h1>
+
+        <div class="instructions" id="instructions">
+            Loading game...
+        </div>
+
+        <div class="game-info">
+            Selected: <span id="selected">0</span> boxes
+        </div>
+
+        <div class="grid" id="grid"></div>
+
+        <div class="button-section">
+            <button onclick="checkAnswer()" id="checkBtn">Check Answer</button>
+            <button class="new-game" onclick="newGame()">New Game</button>
+        </div>
+
+        <div class="message" id="message"></div>
+    </div>
+    <script src="brain.js"></script>
+</body>
+</html>
